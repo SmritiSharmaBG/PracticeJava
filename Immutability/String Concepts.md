@@ -35,3 +35,7 @@
    - StringBuffer is thread-safe and StringBuilder is not thread-safe
    - StringBuffer is slow and StringBuilder is fast.
    - StringBuffer is used in multi-threading environment and StringBuilder is used in single-threaded environments where high performance is desired.
+
+6. To store passwords in Java, prefer char[] instead of String. It is because of 2 main reasons :
+   - String is immutable, so password will remain in the heap memory for a long duration.
+   - After its use, password should be overwritten. This is not possible using String.
